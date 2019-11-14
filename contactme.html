@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Contact Me</title> 
+<link rel="stylesheet" href="nancywebsitestyles.css">
+<style>
+table, th, td{
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse; collapse;
+	background-color: #FCF3CF;
+}
+h1, h2, h3, p, th,td {
+		font-family: lucida sans unicode;
+		}
+body {
+	background-color: #00CED1;
+	}
+h1 {
+	font-family: lucida sans unicode;
+	}
+</style>
+</head>
+<body>
+<div>
+<ul>
+<li><a href="NJB Welcome.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="contactme.html">Contact Me</a></li>
+</ul>
+</div>
+<div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1 align="center">Contact Me</h1>
+<table align="center">
+<form>
+<tr><td colspan="2"><label for="first-name">First Name:</label>
+<input type="text" name="name" id="first Name" required>
+<label for="last name">Last Name:</label>
+<input type="text" name="name" id="last-name" required></td></tr></form>
+<form>
+<tr><td><label for="myemail">Email Address:</label>
+<input type="email" id="myemail" required></td></tr></form>
+<form>
+<tr><td><label for="comments">Comments:</label>
+<textarea rows="10" cols="100" name="comments" id="comments" required></textarea>
+</td></tr></form>
+<form>
+<tr><td>Is your information complete?</td></tr>
+<tr><td><input type="text" id="review"><button id="checkReview">Enter</button></td></tr>
+<script type="text/javascript">
+document.getElementById("checkReview").onclick = function () {
+let yourAnswerEntered = document.getElementById("review").value;
+let review = "Yes";
+if (yourAnswerEntered == review) {
+alert ("Thank you. You may submit your information.");
+}
+else {
+alert ("Please review again that your information is complete.");
+}
+}
+</script>
+<form>
+<tr><td><input type="submit" value="Submit">
+<input type="reset" value="Reset"></td></tr></form>
+</table>
+</div>
+<p align="center">Copyright &copy;Nancy Jane Bullis All Rights Reserved></p>
+<p align="center"><a href="privacypolicy.html">Privacy Policy</a>
+<p align="center"><a href="termsandconditions.html">Terms & Conditions</a></p>
+<p align="center"><a href="disclaimer.html">Disclaimer</a></p>
+
+</body>
+</html>
